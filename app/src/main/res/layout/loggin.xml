@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Privacy Policy"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/AndTextView6"
+        app:layout_constraintTop_toBottomOf="@+id/termsTextView3" />
+
+    <TextView
+        android:id="@+id/AndTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and"
+        app:layout_constraintStart_toEndOf="@+id/TemsTextView5"
+        app:layout_constraintTop_toBottomOf="@+id/termsTextView3" />
+
+    <TextView
+        android:id="@+id/doctroTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/dancing_script"
+        android:text="Print"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstLineTextView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:text="Merchant App"
+        android:textAlignment="center"
+        android:textColor="@color/fui_bgEmail"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctroTextView" />
+
+    <TextView
+        android:id="@+id/SigninOptionsView4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:text="~~~~QUICKLY CONNECT WITH~~~~"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstLineTextView3" />
+
+    <Button
+        android:id="@+id/phone_button"
+        style="@style/FirebaseUI.Button.AccountChooser.PhoneButton"
+        android:layout_width="300dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/fui_sign_in_with_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SigninOptionsView4"
+        tools:ignore="UnusedIds" />
+
+    <Button
+        android:id="@+id/google_button"
+        style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+        android:layout_width="300dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/fui_sign_in_with_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_button"
+        tools:ignore="UnusedIds" />
+
+    <TextView
+        android:id="@+id/termsTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="By signing up or logging in, you agree to our"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_button" />
+
+    <TextView
+        android:id="@+id/TemsTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Terms and Conditions "
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsTextView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
